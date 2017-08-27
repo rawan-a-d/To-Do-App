@@ -3,3 +3,7 @@ div#list {
 	width: 300px;
 	margin: 70px auto;
 }
+
+.hide {
+	display: none;
+}

@@ -8,3 +8,9 @@ $('input').keypress(function(event){
 	}	
 });
 
+// When the plus sign is clicked
+$('#toggleInput').click(function(){
+	// Hide the input
+	$('input').toggleClass('hide');
+})
+
