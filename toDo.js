@@ -1,7 +1,7 @@
 $('input').keypress(function(event){
 	// When enter is pressed
 	if(event.which === 13){
-		// add the todo to the ul
+		// add the to-do to the ul
 		$("ul").append('<li class="item"><span class="delete"> X </span> ' + $(this).val() + '</li>');
 		// empty the input
 		$(this).val("");
@@ -25,7 +25,11 @@ $(document)
 		// Hide the span (trash can)
 		$(this).children().hide();
 	})
-	// Delete a todo
+	// Delete a to-do
 	.on("click", ".delete", function(){
 		$(this).parent().remove();
+	})
+	// Line through a to-do
+	.on("click", "li", function(){
+		$(this).toggleClass('crossOff')
 	})

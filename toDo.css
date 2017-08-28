@@ -11,3 +11,7 @@ div#list {
 .delete {
 	display: none;
 }
+
+.crossOff {
+	text-decoration: line-through;
+}
