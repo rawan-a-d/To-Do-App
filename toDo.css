@@ -7,3 +7,7 @@ div#list {
 .hide {
 	display: none;
 }
+
+.delete {
+	display: none;
+}
